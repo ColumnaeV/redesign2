@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>IB Grade Calculator</title>
+    <meta charset="UTF-8">
+    <link rel="canonical" href="https://clsnguyen.com">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="shortcut icon" href="core/img/general/tabIcon.png">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="core/index.css">
+    <script src="core/jquery.lib.3.3.1.slim.js"></script>
+</head>
+<body>
+<!--Beginning of Body Structure-->
+<div id="bodyContainer">
+    <!--Top Container-->
+<center>
+    <div class="mainTextContainer">
+    <!--Heading-->
+        <h1>Your IB In-Class Exam Score Calculator</h1>
+        <h3><span id="percentValue">Value</span> %</h3>
+    </div>
+</center>
+    <!--Bottom Container-->
+<center>
+    <div class="sliderContainer">
+    <!--Slider 1-->
+        <h2>How much of the material do you know?</h2>
+        <input type="range" min="0" max="10" value="5" class="slider" id="slide1" step="0.5">
+        <p><span id="sliderDisplay1">5</span> / 10</p>
+    <!--Slider 2-->
+        <h2>How prepared do you feel?</h2>
+        <input type="range" min="0" max="10" value="5" class="slider" id="slide2" step="0.5">
+        <p><span id="sliderDisplay2">5</span> / 10</p>
+    <!--Slider 3-->
+        <h2>How often do you pray to the IB gods?</h2>
+        <input type="range" min="0" max="10" value="5" class="slider" id="slide3" step="0.5">
+        <p><span id="sliderDisplay3">5</span> / 10</p>
+    <!--Slider 4-->
+        <h2>How many days has it been since you've last studied?</h2>
+        <input type="range" min="1" max="30" value="1" class="slider" id="slide4" step="1">
+        <p><span id="sliderDisplay4">1</span> Days</p>
+    <!--Calculate Button-->
+        <div style="margin-top: 4vh;"><a id="calcButton" onclick="calc1()">CALCULATE</a></div>
+    </div>
+</center>
+</div>
+<!--End of Budy Structure-->
+<script src="core/index.js"></script>
+</body>
+</html>

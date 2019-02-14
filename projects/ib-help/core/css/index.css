@@ -1,0 +1,255 @@
+/*Font Styles*/
+@font-face {
+    font-family: 'BebasNeue';
+    src: url(../font/BebasNeue-Regular.otf);
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*Loading Styles*/
+#load {
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100vw;
+    height: 100vh;
+    z-index: 9999;
+    opacity: 1;
+    background-color: #1c1c1c;
+    transition-duration: 0.5s;
+}
+#load img {
+    width: 50vmin;
+    position: absolute;
+    bottom: 50%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+}
+
+/*Container Styles*/
+body {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    min-height: 100vh;
+    background-color: #c4c4c4;
+    overflow-x: hidden;
+    font-family: "BebasNeue", Helvetica, Arial, sans-serif;
+}
+div {
+    box-sizing: border-box;
+}
+#bodyContainer{
+    padding: 0;
+    margin: 0;
+    width: 100vw;
+    height: 100%;
+    transition-duration: 1.5s;
+    display: block;
+    opacity: 0;
+    transition-delay: 0.5s;
+    transition-duration: 1.25s;
+}
+.page {
+    width: 100vw;
+    min-height: 100vh;
+    display: flex;
+}
+.textContainer {
+    height: 100vh;
+    width: 50vw;
+    display: inline-table;
+}
+.imageContainer {
+    height: 100vh;
+    width: 50vw;
+    display: table-cell;
+    text-align: center;
+}
+
+/*Image Styles*/
+#logo {
+    padding-top: 15vh;
+    width: 70vh;
+    margin: auto;
+    position: relative;
+}
+.imageCard {
+    box-shadow: 0.5em 1em 3em rgba(0,0,0,0.5);
+    float: left;
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+.webImage {
+    width: 40vw;
+    display: block;
+}
+
+/*Down Arrow Styles*/
+.down {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+}
+#downArrowContainer {
+    width: inherit;
+    position: absolute;
+    bottom: 0;
+    padding: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+    text-align: center;
+}
+b {
+    border: solid #fff;
+    border-width: 0 5px 5px 0;
+    display: inline-block;
+    margin-top: 5vh;
+    padding: 10px;
+    cursor: pointer;
+}
+
+/*Scroll Bar Styles*/
+::-webkit-scrollbar {
+    width: 7px;
+}
+::-webkit-scrollbar-thumb {
+    background: #345678;
+}
+::-webkit-scrollbar-track {
+    background: #777;
+}
+
+/*Text Styles*/
+h1 {
+    margin: 0;
+    font-size: 5em;
+    padding-left: 1.5em;
+    color: #345678;
+    vertical-align: middle;
+    display: table-cell;
+    letter-spacing: 0.05em;
+}
+p {
+    margin: 0;
+    font-size: 2em;
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+    color: #f1f1f1;
+    vertical-align: middle;
+    display: table-cell;
+    letter-spacing: 0.05em;
+    line-height: 150%;
+    word-spacing: 0.05em;
+}
+a {
+    color: #D27C53;
+    text-decoration-line: underline;
+    transition-duration: 0.3s;
+}
+a:hover {
+    font-size: 0.95em;
+    cursor: pointer;
+}
+::selection {
+    color: #f1f1f1;
+    background: #555;
+}
+::-moz-selection {
+    color: #f1f1f1;
+    background: #555;
+}
+/*Mobile Support*/
+@media only screen and (max-width: 100vh) {
+.page {
+    width: 100vw;
+    min-height: 100vh;
+    display: block;
+}
+.textContainer {
+    height: inherit;
+    width: 100vw;
+    padding-bottom: 10vh;
+    display: inline-table;
+}
+/*Text Styles*/
+h1 {
+    padding-top: 5vh;
+    margin: 0;
+    font-size: 5em;
+    padding-left: 1.5em;
+    color: #345678;
+    vertical-align: middle;
+    display: table-cell;
+    letter-spacing: 0.05em;
+}
+p {
+    margin: 0;
+    font-size: 2em;
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+    color: #f1f1f1;
+    vertical-align: middle;
+    display: table-cell;
+    letter-spacing: 0.05em;
+    line-height: 150%;
+    word-spacing: 0.05em;
+}
+a {
+    color: #D27C53;
+    text-decoration-line: underline;
+    transition-duration: 0.3s;
+}
+.imageContainer {
+    height: 50vh;
+    width: 100vw;
+    display: table-cell;
+    text-align: center;
+}
+.imageCard {
+    box-shadow: 0.5em 1em 3em rgba(0,0,0,0.5);
+    float: left;
+    position: relative;
+    margin-top: 10vw;
+    margin-bottom: 10vw;
+}
+.webImage {
+    width: 80vw;
+    display: block;
+}
+#logo {
+    padding-top: 10vh;
+    width: 80vw;
+    margin: auto;
+    position: relative;
+}
+/*Text Styles*/
+h1 {
+    margin: 0;
+    font-size: 2.5em;
+    padding-left: 1.5em;
+    color: #345678;
+    vertical-align: middle;
+    display: table-cell;
+    letter-spacing: 0.05em;
+}
+p {
+    margin: 0;
+    font-size: 1.5em;
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+    color: #f1f1f1;
+    vertical-align: top;
+    display: table-cell;
+    letter-spacing: 0.05em;
+    line-height: 150%;
+    word-spacing: 0.05em;
+}
+a {
+    color: #D27C53;
+    text-decoration-line: underline;
+    transition-duration: 0.3s;
+}
+}
