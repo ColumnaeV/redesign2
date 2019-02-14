@@ -1,0 +1,373 @@
+/*General / Container Styles*/
+p,h1,h2,h3,h4,h5 {
+    cursor: default;
+    opacity: 1;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+img {
+    user-drag: none; 
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+.artTitle {
+    text-align: center;
+    text-indent: 0;
+    padding-top: 2vmin;
+    padding-bottom: 8vmin;
+    color: #123456;
+    font-size: 3vmin;
+}
+#artContainer {
+    background-color: #bbb;
+    width: 38vw;
+    height: 32vw;
+}
+#artContainer img {
+    width: 90%;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-55%, -50%);
+}
+div {
+    box-sizing: border-box;
+}
+
+/*All Intro Slideshow Styles*/
+#intro {
+    padding-bottom: 0vh;
+    padding-top: 0;
+    height: 100vh;
+    width: 100vw;
+}
+#introTextContainer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    z-index: 10;
+    background-color: rgba(0,0,0,0.75);
+}
+#wrapper, #nextimg {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+#wrapper {
+    z-index: 9;
+}
+#nextimg {
+    z-index: 8;
+}
+#frontImage {
+    width: 40vmin;
+    left: 50%;
+    padding-top: 20vh;
+    padding-bottom: 8vh;
+}
+
+/*Loading*/
+#load {
+    position: fixed;
+    background-color: #e6e6e6;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    left: 0;
+    top: 0;
+    z-index: 999;
+}
+
+/*Image Styles*/
+.portrait {
+    width: 100%;
+}
+
+/*Main Container Styles*/
+body {
+    background: #e6e6e6;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    overflow-x: hidden;
+    font-family: "Roboto", Helvetica, Arial, sans-serif;
+}
+#bodyContainer{
+    width: 100vw;
+    height: 100%;
+    transition-duration: 1.5s;
+    display: block;
+}
+.page{
+    padding-top: 10vh;
+    z-index: 11;
+    opacity: 1;
+    width: 100vw;
+}
+
+/*Double Split*/
+.sectionSplit {
+    width: 100%;
+    height: inherit;
+    display: flex;
+    padding-bottom: 2vh;
+    padding-top: 4vh;
+}
+.dsSection {
+    width: 50%;
+    height: inherit;
+}
+
+/*Navigation Panel Styles*/
+#navContainer {
+    overflow-x: hidden;
+    display: flex;
+    position: fixed;
+    background-color: #b8b8b8;
+    width: 100vw;
+    max-height: inherit;
+    z-index: 15;
+    opacity: 0;
+    top: 0;
+    right: 0;
+    transition-duration: 0.5s;
+}
+.sidePanelButtons a{
+    padding: 1.5vmin;
+    padding-left: 1vw;
+    padding-right: 1vw;
+    width: 15vw;
+    text-decoration: none;
+    font-size: 3vmin;
+    color: #fff;
+    float: left;
+    display: block;
+    transition: 0.5s;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: 100;
+}
+#tabHome{
+    color: #ffffff;
+    background-color: #123456;
+    margin-left: 49vw;
+}
+
+/*Down Arrow Styles*/
+.down {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+}
+#downArrowContainer {
+    width: inherit;
+    position: absolute;
+    bottom: 25px;
+    padding: 25px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 11;
+    display: inherit;
+    overflow: hidden;
+}
+b {
+    border: solid #ccc;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    margin-top: 5vh;
+    padding: 9px;
+    cursor: pointer;
+}
+
+/*Scroll Bar Styles*/
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-thumb {
+    background: #123456;
+}
+::-webkit-scrollbar-track {
+    background: #777;
+}
+
+/*Text Styles*/
+h1 {
+    font-size: 5.5vmin;
+    font-weight: 300;
+    line-height: 150%;
+    color: #fff;
+    text-shadow: 0 0 40px #000;
+    margin-left: 10vw;
+    margin-right: 10vw;
+}
+
+/*Section Titles*/
+h2 {
+    padding-top: 4vh;
+    padding-bottom: 4vh;
+    color: #123456;
+    font-weight: 500 !important;
+    font-size: 8vmin;
+    font-weight: 500;
+    text-align: center;
+    line-height: 140%;
+    word-spacing: 5px;
+}
+
+/*Article titles*/
+h3 {
+    padding: 3vh;
+    color: #123456;
+    font-size: 4.25vmin;
+    font-weight: 400;
+    text-align: center;
+    line-height: 140%;
+    word-spacing: 5px;
+}
+
+/*Staff Reserved Styles*/
+h4 {
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+    color: #1D7044;
+    font-size: 3vmin;
+    font-weight: 500;
+    text-align: center;
+    line-height: 140%;
+    word-spacing: 5px;
+    text-transform: uppercase;
+}
+h5 {
+    margin-top: 1vh;
+    padding-bottom: 2vh;
+    color: #fff;
+    font-size: 2.75vmin;
+    font-weight: 100;
+    text-align: center;
+    line-height: 140%;
+    word-spacing: 5px;
+}
+
+/*Paragraph*/
+p {
+    color: #123456;
+    font-size: 2.25vmin;
+    text-align: left;
+    text-indent: 8vmin;
+    font-weight: 100;
+    line-height: 140%;
+    letter-spacing: 0.25vmin;
+    padding: 3vmin;
+    line-height: 180%;
+}
+.downloadIcon {
+    color: #123456;
+    transition-duration: 0.3s;
+}
+.downloadIcon:hover {
+    color: #aaa;
+    cursor: pointer;
+}
+
+/*Mobile Support*/
+@media only screen and (max-width: 100vh) {
+/*Double Split*/
+.sectionSplit {
+    width: 100%;
+    height: inherit;
+    display: inherit;
+    padding-bottom: 2vh;
+    padding-top: 4vh;
+}
+.dsSection {
+    width: 100%;
+    height: inherit;
+}
+#end {
+    width: 50vw;
+    padding-left: 25vw;
+    padding-right: 25vw;
+}
+h1 {
+    padding-top: 10vh;
+    font-size: 4.5vmin;
+}
+p {
+    color: #123456;
+    font-size: 3vmin;
+    text-align: left;
+    text-indent: 8vmin;
+    font-weight: 100;
+    line-height: 140%;
+    letter-spacing: 0.25vmin;
+    padding: 5vmin;
+    line-height: 200%;
+}
+.sidePanelButtons a{
+    padding: 3vmin;
+    padding-left: 1vw;
+    padding-right: 1vw;
+    width: 23vw;
+    text-decoration: none;
+    font-size: 3.5vmin;
+    color: #fff;
+    float: left;
+    background-color: #b8b8b8;
+    display: block;
+    transition: 0.5s;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: 100;
+}
+#tabHome{
+    color: #ffffff;
+    background-color: #345678;
+    margin-left: 25vw;
+}
+#downArrowContainer {
+    width: inherit;
+    position: absolute;
+    bottom: 5vh;
+    padding: 25px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 11;
+    display: inherit;
+    overflow: hidden;
+}
+.artTitle {
+    text-align: center;
+    text-indent: 0;
+    padding-top: 2vmin;
+    padding-bottom: 8vmin;
+    color: #123456;
+    font-size: 3.5vmin;
+}
+#artContainer {
+    background-color: #bbb;
+    width: 76vw;
+    height: 64vw;
+}
+#artContainer img {
+    width: 90%;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-55%, -50%);
+}
+}
