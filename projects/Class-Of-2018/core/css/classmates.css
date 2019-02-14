@@ -1,0 +1,357 @@
+/*Image Styles*/
+#frontLogo {
+    width: 50vw;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/*Loading Styles*/
+#load
+{
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100vw;
+    height: 100vh;
+    z-index: 9999;
+    background-color: #1c1c1c;
+}
+
+/*Font Styles*/
+@font-face {
+    font-family: 'PenStyle';
+    src: url(../font/Roboto-Regular.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*Container Styles*/
+body {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #1c1c1c;
+    overflow-x: hidden;
+    font-family: "Roboto", Helvetica, Arial, sans-serif;
+    display: block;
+}
+div {
+    box-sizing: border-box;
+}
+#allImageContainer{
+    width: 100vw;
+    height: inherit;
+    transition-duration: 1.5s;
+    display: flex;
+    margin-bottom: 5vh;
+}
+#memberContainer {
+    width: 100vw;
+    height: inherit;
+    display: block;
+}
+
+/*Card Styles*/
+.memberCard {
+    margin: 2vw;
+    width: 16vw;
+    height: 23vw;
+    float: left;
+    overflow: hidden;
+    box-shadow: 0 0 2vmin #000;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+.person {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    transition: all 0.15s;
+}
+.memberCard:hover {
+    box-shadow: 0 0 4vmin #000;
+}
+.memberCard:hover .person {
+    transform: scale(1.05);
+    opacity: 0.8;
+}
+#brookeSpecial {
+    margin-left: 2vw;
+}
+#leilySpecial {
+    margin-left: 42vw;
+}
+
+#forceClose {
+    position: fixed;
+    top: -20vh;
+    left: 0;
+    width: 100vw;
+    height: 200vh;
+    background-color: rgba(0,0,0,0.7);
+    display: none;
+}
+.personCard {
+    padding: 0;
+    position: fixed;
+    bottom: 50%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    height: 90vh;
+    width: 60vh;
+    background-color: #2c2c2c;
+    box-shadow: 0 0 2vmin #000;
+    display: block;
+    z-index: -1;
+    opacity: 0;
+    transition-duration: 0s;
+}
+.show {
+    opacity: 1;
+    z-index: 10;
+}
+.avatar {
+    width: 15vw;
+    height: 15vw;
+    border-radius: 50%;
+    margin: 4vmin;
+    box-shadow: 0 0 2vmin #000;
+    background-size: cover;
+    background-position: center;
+}
+.personCard h1 {
+    font-size: 5vmin;
+    padding-left: 2vmin;
+    padding-right: 2vmin;
+    font-weight: 500 !important;
+    color: #f1f1f1;
+    text-align: center;
+    padding-top: 1vmin;
+}
+.personCard h2 {
+    font-size: 3.5vmin;
+    padding-left: 2vmin;
+    padding-right: 2vmin;
+    font-weight: 100 !important;
+    color: #0380d3;
+    padding-bottom: 2vmin;
+}
+h4 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: #f1f1f1;
+    cursor: pointer;
+    padding: 0;
+    margin-right: 3vmin !important;
+    margin: 2vmin;
+    font-size: 4.5vmin;
+}
+.badgeContainer {
+    padding-left: 5vmin;
+    padding-right: 5vmin;
+    position: absolute;
+    bottom: 2vmin;
+    width: 100%;
+    min-height: 8vmin;
+}
+.badge {
+    height: 8vmin;
+}
+
+/*Table Styles*/
+table {
+    table-layout: auto; 
+    width: 90vw;
+    margin-left: 5vw;
+    border-collapse: collapse;
+}
+.badgeDisplay {
+    width: 6vw;
+    height: 6vw;
+}
+.badgeDisplay img {
+    width: 5vw;
+    height: 5vw;
+    padding: 1vw;
+    margin: 0;
+}
+td {
+    color: #0380d3;
+    font-weight: 300 !important;
+    font-size: 2.75vmin;
+}
+.subTitle {
+    color: #ccc;
+    width: inherit;
+    font-weight: 700 !important;
+    font-size: 4vmin;
+    padding-bottom: 2vmin;
+    text-transform: uppercase;
+}
+
+/*Text Styles*/
+a {
+    text-decoration: none;
+}
+h1 {
+    font-size: 6vmin;
+    font-weight: 300 !important;
+    color: #f1f1f1;
+    text-align: center;
+    padding-top: 6vmin;
+}
+h2 {
+    font-size: 3vmin;
+    font-weight: 300 !important;
+    color: #aaa;
+    padding-bottom: 2vmin;
+}
+/*Name*/
+p {
+    color: #0380d3;
+    font-size: 2vmin;
+    line-height: 150%;
+    margin: 0;
+}
+
+/*Scroll Bar Styles*/
+::-webkit-scrollbar {
+    width: 1.3vmin;
+}
+::-webkit-scrollbar-thumb {
+    background: #f1f1f1;
+    border: solid 0.3vmin #1c1c1c;
+    border-radius: 1.3vmin;
+}
+::-webkit-scrollbar-track {
+    background: #1c1c1c;
+}
+@media only screen and (max-width: 100vh) {
+.memberCard {
+    margin: 2vw;
+    width: 21vw;
+    height: 30vw;
+    float: left;
+    overflow: hidden;
+    box-shadow: 0 0 2vmin #000;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+#brookeSpecial {
+    margin-left: 14.5vw;
+}
+#leilySpecial {
+    margin-left: 2vw;
+}
+h2 {
+    padding-left: 5vmin;
+    padding-right: 5vmin;
+    font-size: 3vmin;
+    font-weight: 300 !important;
+    color: #aaa;
+    padding-bottom: 2vmin;
+}
+.personCard {
+    padding: 0;
+    position: fixed;
+    bottom: 50%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    height: inherit;
+    width: 70vw;
+    background-color: #2c2c2c;
+    box-shadow: 0 0 2vmin #000;
+    display: block;
+    z-index: -1;
+    opacity: 0;
+    transition-duration: 0s;
+}
+.show {
+    opacity: 1;
+    z-index: 10;
+}
+.avatar {
+    width: 40vw;
+    height: 40vw;
+    border-radius: 50%;
+    margin: 10vmin;
+    box-shadow: 0 0 2vmin #000;
+    background-size: cover;
+    background-position: center;
+}
+.personCard h1 {
+    font-size: 7vmin;
+    padding-left: 2vmin;
+    padding-right: 2vmin;
+    font-weight: 500 !important;
+    color: #f1f1f1;
+    text-align: center;
+    padding-top: 1vmin;
+}
+.personCard h2 {
+    font-size: 4.5vmin;
+    padding-left: 3vmin;
+    padding-right: 3vmin;
+    font-weight: 100 !important;
+    color: #0380d3;
+    padding-bottom: 2vmin;
+}
+h4 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: #f1f1f1;
+    cursor: pointer;
+    padding: 0;
+    margin-right: 4vmin !important;
+    margin: 2vmin;
+    font-size: 8vmin;
+}
+.badgeContainer {
+    padding-left: 5vmin;
+    padding-right: 5vmin;
+    position: relative;
+    padding-bottom: 2vmin;
+    width: 100%;
+    min-height: 8vmin;
+}
+.badge {
+    height: 12vmin;
+}
+/*Table Styles*/
+table {
+    table-layout: auto; 
+    width: 90vw;
+    margin-left: 5vw;
+    border-collapse: collapse;
+    margin-bottom: 5vh;
+}
+.badgeDisplay {
+    width: 10vw;
+    height: 10vw;
+}
+.badgeDisplay img {
+    width: 8vw;
+    height: 8vw;
+    padding: 1vw;
+    margin: 0;
+}
+td {
+    color: #0380d3;
+    font-weight: 300 !important;
+    font-size: 2.5vmin;
+}
+.subTitle {
+    color: #ccc;
+    width: inherit;
+    font-weight: 700 !important;
+    font-size: 3vmin;
+    padding-bottom: 2vmin;
+    text-transform: uppercase;
+}
+}

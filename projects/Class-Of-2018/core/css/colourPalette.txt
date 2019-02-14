@@ -1,0 +1,16 @@
+**COLOUR PALETTE**
+
+Background Colour
+#1C1C1C
+
+Blue Thin Text Colour
+#0380D3
+
+Main White Text Colour
+#F1F1F1
+
+Text Collage
+Green - #35bc23
+Blue - #238bbc
+Grey - #b8c0c4
+Gold - #e8b81e

@@ -1,0 +1,275 @@
+/*Loading Styles*/
+#load
+{
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100vw;
+    height: 100vh;
+    z-index: 9999;
+    background-color: #1c1c1c;
+    transition-duration: 1s;
+    visibility: visible;
+}
+
+/*Font Styles*/
+@font-face {
+    font-family: 'PenStyle';
+    src: url(../font/Roboto-Regular.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*Container Styles*/
+#bodyContainer{
+    width: 100vw;
+    height: 100%;
+    transition-duration: 1.5s;
+    display: block;
+}
+body {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    min-height: 100vh;
+    background-color: #1c1c1c;
+    overflow-x: hidden;
+    font-family: "Roboto", Helvetica, Arial, sans-serif;
+}
+div {
+    box-sizing: border-box;
+}
+section {
+    background: #1c1c1c;
+    padding: 2vmin;
+}
+.sectionDiv {
+    height: inherit;
+}
+.parallax-container {
+    height: 80vmin;
+    width: 100%;
+}
+.quote-left {
+    width: 100vw;
+    height: inherit;
+}
+.quote-right {
+    width: 100vw;
+    height: inherit;
+}
+#headerSlide {
+    height: 100vh !important;
+}
+
+/*All Quote Styles*/
+.largeQuoteContainer {
+    margin: 5vw;
+    width: 70vw;
+    height: inherit;
+    display: flex;
+    flex-direction: row;
+}
+.quoteContainer {
+    width: 70vw;
+    height: inherit;
+    display: table-cell;
+}
+.quoteImage-left, .quoteImage-right {
+    width: 14vw;
+    height: 14vw;
+    margin: 3vw;
+    background-color: #111;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    border-radius: 50%;
+    box-shadow: 0 0 3vmin #111;
+    opacity: 0;
+}
+.quoteDiv-left, .quoteDiv-right {
+    width: 50vw;
+    height: 20vw;
+    padding-top: 5vw;
+    opacity: 0;
+}
+.quoteImage-left, .quoteDiv-left {
+    float: left;
+    text-align: left;
+}
+.quoteImage-right, .quoteDiv-right {
+    float: right;
+    text-align: right;
+}
+.quoteDiv-left p, .quoteDiv-right p {
+    font-size: 4vmin;
+    font-weight: 700;
+    text-shadow: 0 0 3vmin #111;
+}
+.quoteDiv-left h2, .quoteDiv-right h2 {
+    font-size: 2.5vmin;
+    font-weight: 100;
+    font-style: italic;
+}
+.quoteDiv-left i, .quoteDiv-right i {
+    font-size: 2.75vmin;
+    font-weight: 100 !important;
+}
+.quoteDiv-left {
+    padding-right: 8vw;
+}
+.quoteDiv-right {
+    padding-left: 8vw;
+}
+
+/*Scroll Bar Styles*/
+::-webkit-scrollbar {
+    width: 1.3vmin;
+}
+::-webkit-scrollbar-thumb {
+    background: #f1f1f1;
+    border: solid 0.3vmin #1c1c1c;
+    border-radius: 1.3vmin;
+}
+::-webkit-scrollbar-track {
+    background: #1c1c1c;
+}
+
+/*Nav Styles*/
+b {
+    border: solid #f1f1f1;
+    border-width: 0 4px 4px 0;
+    display: inline-block;
+    margin-top: 5vh;
+    padding: 10px;
+    cursor: pointer;
+}
+.down {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+}
+#downArrowContainer {
+    width: inherit;
+    position: absolute;
+    bottom: 25px;
+    padding: 25px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 11;
+    display: inherit;
+    overflow: hidden;
+    text-align: center;
+}
+
+/*Image Styles*/
+#frontLogo {
+    width: 50vw;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/*Text Styles*/
+a {
+    text-decoration: none;
+}
+#soundcloudLink:hover {
+    cursor: pointer;
+    transition-duration: 0.5s;
+    text-shadow: 0 0 1vmin #0380d3;
+}
+h1 {
+    font-size: 6vmin;
+    font-weight: 300 !important;
+    color: #f1f1f1;
+    text-align: center;
+    padding-top: 6vmin;
+}
+h2 {
+    font-size: 3vmin;
+    font-weight: 300 !important;
+    color: #aaa;
+    padding-bottom: 2vmin;
+}
+/*Name*/
+p {
+    color: #0380d3;
+    font-size: 2vmin;
+    line-height: 150%;
+    margin: 0;
+}
+/*Mobile Support*/
+@media (min-width: 480px) and (max-width: 950px) {
+.quoteDiv-left p, .quoteDiv-right p {
+    font-size: 2.3vmin;
+}
+.quoteDiv-left h2, .quoteDiv-right h2 {
+    font-size: 2vmin;
+}
+.quoteDiv-left i, .quoteDiv-right i {
+    font-size: 2.15vmin;
+}
+}
+@media (min-width: 950px) and (max-width: 1280px) {
+.quoteDiv-left p, .quoteDiv-right p {
+    font-size: 3.5vmin;
+}
+.quoteDiv-left h2, .quoteDiv-right h2 {
+    font-size: 2.5vmin;
+}
+.quoteDiv-left i, .quoteDiv-right i {
+    font-size: 2.75vmin;
+}
+}
+@media only screen and (max-width: 100vh) {
+.parallax-container {
+    height: 30vh;
+    width: 100%;
+}
+/*Quotes!*/
+.largeQuoteContainer {
+    margin: 5vw;
+    width: 80vw;
+}
+.quoteContainer {
+    width: 80vw;
+}
+.quoteImage-left, .quoteImage-right {
+    width: 14vw;
+    height: 14vw;
+    margin: 3vw;
+    margin-top: 3vh;
+    background-color: #111;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    border-radius: 50%;
+    box-shadow: 0 0 3vmin #111;
+    opacity: 0;
+}
+.quoteDiv-left, .quoteDiv-right {
+    margin-top: 2vh;
+    width: 60vw;
+}
+.quoteDiv-left p, .quoteDiv-right p {
+    font-size: 2.3vmin;
+}
+.quoteDiv-left h2, .quoteDiv-right h2 {
+    font-size: 2vmin;
+}
+.quoteDiv-left i, .quoteDiv-right i {
+    font-size: 2.15vmin;
+}
+.quoteDiv-left {
+    padding-right: 4vw;
+}
+.quoteDiv-right {
+    padding-left: 4vw;
+}
+#frontLogo {
+    width: 80vw;
+}
+}
