@@ -1,0 +1,248 @@
+/*Font Styles*/
+@font-face {
+    font-family: 'BebasNeue';
+    src: url(../font/BebasNeue-Regular.otf);
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*Loading Styles*/
+#load {
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100vw;
+    height: 100vh;
+    z-index: 9999;
+    opacity: 1;
+    background-color: #1c1c1c;
+    transition-duration: 0.5s;
+}
+#load img {
+    height:  50vmin;
+    position: absolute;
+    bottom: 50%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+}
+
+/*Container Styles*/
+body {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #1c1c1c;
+    overflow: hidden;
+}
+div {
+    box-sizing: border-box;
+}
+#bodyContainer{
+    background-image: url(../img/wallpaper.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 0;
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+    transition-duration: 1.5s;
+    display: block;
+    opacity: 0;
+    transition-delay: 0.5s;
+    transition-duration: 1.25s;
+}
+#introText {
+    position: absolute;
+    left: 50%;
+    bottom: 4vw;
+    transform: translate(-50%, 0);
+    width: auto;
+    height: auto;
+    display: inherit;
+    text-align: center;
+    z-index: 2;
+}
+#invitationContainer {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.5);
+    /*Change*/
+    z-index: -1;
+    opacity: 0;
+    transition-duration: 0.3s;
+}
+.imageHolder {
+    box-shadow: 0.5em 1em 3em rgba(0,0,0,0.5);
+    float: left;
+    position: relative;
+    transform: translate(-50%,-50%);
+    left: 50%;
+    top: 50%;
+    transition-duration:  0.3s;
+}
+#mapDataContainer {
+    width: auto;
+    position: absolute;
+    bottom: 0.5vw;
+    left: -2em;
+    z-index: 5;
+    display: flex;
+    flex-direction: column;
+}
+.mapTextContainer {
+    background-color: #000;
+    box-shadow: 0.5em 1em 3em rgba(0,0,0,0.5);
+    -webkit-clip-path: polygon(0 0, 0 100%, calc(100% - 1em) 100%, 100% 0);
+    padding-right: 1em;
+    margin: 0.75em;
+    width: inherit;
+}
+#avatarHolder {
+    box-shadow: 0.5em 1em 3em rgba(0,0,0,0.5);
+    float: left;
+    width: 10em;
+    margin-bottom: 1em;
+    border-radius: 50%;
+}
+
+/*Image Styles*/
+#invNotif {
+    width: 10em;
+    z-index: 10;
+}
+#invNotif:hover {
+    cursor: pointer;
+}
+.map {
+    position: relative;
+    width: 60vw;
+    display: block;
+}
+#avatar {
+    position: relative;
+    width: 10em;
+    display: block;
+    position: relative;
+    border-radius: 50%;
+}
+
+/*TextStyles*/
+h1, h2,  h3, p {
+    margin: 0;
+    padding: 0.25em;
+    letter-spacing: 0.05em;
+    font-family: "BebasNeue", Helvetica, Arial, sans-serif;
+    text-shadow: 0 0 1em rgba(0,0,0,0.5);
+    z-index: 2;
+}
+h1 {
+    font-size: 2em;
+    color: #bbb;
+    font-weight: 100;
+}
+h2 {
+    font-size: 5em;
+    color: #fff;
+}
+h3 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 5em;
+    color: #fff;
+    padding: 0;
+    padding-right: 0.25em;
+    font-weight: 100;
+    transition: 0.3s;
+}
+h3:hover {
+    color: #E52426;
+    cursor: pointer;
+}
+a {
+    text-decoration: none;
+}
+p {
+    font-size: 2em;
+    color: #f1f1f1;
+}
+::selection {
+    color: #f1f1f1;
+    background: #555;
+}
+::-moz-selection {
+    color: #f1f1f1;
+    background: #555;
+}
+/*Mobile Support*/
+@media (min-width: 480px) and (max-width: 959px) {
+
+}
+@media only screen and (max-width: 960) {
+
+}
+@media (min-width: 961px) and (max-width: 1280px) {
+
+}
+@media only screen and (max-width: 100vh) {
+h1 {
+    font-size: 1.2em;
+    color: #bbb;
+    font-weight: 100;
+}
+h2 {
+    font-size: 3em;
+    color: #fff;
+}
+h3 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 4em;
+    color: #fff;
+    padding: 0;
+    padding-right: 0.25em;
+    font-weight: 100;
+    transition: 0.3s;
+}
+p {
+    font-size: 1em;
+    color: #f1f1f1;
+}
+.map {
+    position: relative;
+    width: 80vw;
+    display: block;
+}
+#avatar {
+    position: relative;
+    width: 4em;
+    display: block;
+    position: relative;
+    border-radius: 50%;
+}
+#invNotif {
+    width: 7em;
+    z-index: 10;
+}
+.mapTextContainer {
+    background-color: #000;
+    box-shadow: 0.5em 1em 3em rgba(0,0,0,0.5);
+    -webkit-clip-path: polygon(0 0, 0 100%, calc(100% - 1em) 100%, 100% 0);
+    padding-right: 1em;
+    margin: 0.25em;
+    width: inherit;
+}
+#avatarHolder {
+    box-shadow: 0.5em 1em 3em rgba(0,0,0,0.5);
+    float: left;
+    width: 4em;
+    margin-bottom: 1em;
+    border-radius: 50%;
+}
+}
