@@ -1,0 +1,530 @@
+/*Font Styles*/
+@font-face {
+    font-family: 'BebasNeue';
+    src: url(../font/BebasNeue-Regular.otf);
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Roboto';
+    src: url(../font/Roboto-Thin.tff);
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*Loading Styles*/
+#load {
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100vw;
+    height: 100%;
+    z-index: 9999;
+    opacity: 1;
+    background-color: #1c1c1c;
+    transition-duration: 0.5s;
+}
+#load img {
+    height:  50vmin;
+    position: absolute;
+    bottom: 50%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+}
+
+/*Container Styles*/
+body {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    min-height: 100%;
+    background-color: #1c1c1c;
+    overflow-x: hidden;
+}
+div {
+    box-sizing: border-box;
+}
+#bodyContainer{
+    padding: 0;
+    margin: 0;
+    width: 100vw;
+    height: 100%;
+    transition-duration: 1.5s;
+    display: block;
+    opacity: 0;
+    transition-delay: 0.5s;
+    transition-duration: 1.25s;
+}
+.page {
+    width: 100vw;
+    min-height: 48vw;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+}
+
+/*All Text Page Styles*/
+.v-center-div-content {
+    width: 100%;
+    height: 48vw;
+    display: table-cell;
+    vertical-align: middle;
+}
+.page-wrapper {
+    width: 100vw;
+    height: auto;
+    padding-top: 3vw;
+    padding-bottom: 3vw;
+    display: inline-block;
+    flex-direction: row;
+}
+.left-container, .right-container {
+    width: 50vw;
+    height: auto;
+    padding: 1em;
+    float: left;
+}
+#front-logo {
+    height: 25vw;
+}
+.contains-text {
+    display: grid;
+    display: grid;
+}
+.alt-image-large{
+    position: relative;
+    float: left;
+    width: 50vw;
+    height: 100%;
+}
+.image-holder {
+    box-shadow: 0.5em 1em 3em rgba(0,0,0,0.5);
+    float: left;
+    position: relative;
+    transform: translateX(-50%);
+    left: 50%;
+    transition-duration:  0.3s;
+}
+.static-image {
+    position: relative;
+    width: 25vw;
+    display: block;
+}
+
+/*Social Media Card Styles*/
+#socMedContainer {
+    width: 100vw;
+    height: inherit;
+    display: flex;
+    flex-direction: row;
+}
+
+/*Image Styles*/
+#footerImage {
+    width: 7em;
+}
+.imageCard {
+    box-shadow: 0.5em 1em 3em rgba(0,0,0,0.5);
+    float: left;
+    position: relative;
+    transform: translate(-50%,-50%);
+    left: 50%;
+    top: 50%;
+    transition-duration:  0.3s;
+}
+.socContainer {
+    position: relative;
+    float: left;
+    width: 50vw;
+    height: 30vw;
+}    
+.imageCardAdd {
+    transform: translate(-50%, -48%);
+    box-shadow: 0.5em 0.8em 2em rgba(0,0,0,0.6);
+}
+.projectImage {
+    position: relative;
+    width: 40vw;
+    display: block;
+    transition-duration:  0.3s;
+}
+.projectImageAdd {
+    width: 36vw;
+}
+
+/*Down Arrow Styles*/
+.down {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+}
+#downArrowContainer {
+    width: inherit;
+    position: absolute;
+    bottom: 0;
+    padding: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+    text-align: center;
+    visibility: visible;
+}
+u {
+    border: solid #fff;
+    border-width: 0 5px 5px 0;
+    display: inline-block;
+    margin-top: 5vw;
+    padding: 10px;
+    cursor: pointer;
+}
+
+/*Scroll Bar Styles*/
+::-webkit-scrollbar {
+    width: 0.8em;
+}
+::-webkit-scrollbar-thumb {
+    background: #777;
+    border: solid 0.2em #1c1c1c;
+    border-radius: 0.8em;
+}
+::-webkit-scrollbar-track {
+    background: #1c1c1c;
+}
+
+/*Text Styles*/
+h1 {
+    margin: 0;
+    font-size: 5em;
+    padding: 0.5em;
+    padding-left: 4vw;
+    color: #fff;
+    vertical-align: middle;
+    display: table-cell;
+    letter-spacing: 0.03em;
+    font-family: "BebasNeue", Helvetica, Arial, sans-serif;
+}
+h2 {
+    margin: 0;
+    font-size: 1.5em;
+    padding: 0.5em;
+    padding-left: 4vw;
+    color: #ccc;
+    vertical-align: middle;
+    display: table-cell;
+    letter-spacing: 0.03em;
+    font-weight: 100;
+    font-family: "Roboto", Helvetica, Arial, sans-serif;
+}
+h3 {
+    margin: 0;
+    font-size: 3em;
+    padding: 0.5em;
+    padding: 0.5em;
+    color: #D27C53;
+    text-align: left;
+    letter-spacing: 0.03em;
+    font-family: "BebasNeue", Helvetica, Arial, sans-serif;
+}
+p {
+    margin: 0;
+    font-size: 1.2em;
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+    color: #f1f1f1;
+    letter-spacing: 0.05em;
+    line-height: 150%;
+    word-spacing: 0.05em;
+    text-indent: 1em;
+    font-weight: 100;
+    font-family: "Roboto", Helvetica, Arial, sans-serif;
+}
+/*Project Text Styles*/
+.projectTextContainer {
+    position: absolute;
+    z-index: -1;
+    background-color: #000;
+    -webkit-clip-path: polygon(0 0, 0 100%, calc(100% - 1em) 100%, 100% 0);
+    bottom: 0.5vw;
+    left: -2vw;
+    opacity: 0;
+    transition: 0.3s; 
+}
+.projectTextContainerAdd {
+    z-index: 5;
+    bottom: 2vw;
+    opacity: 1; 
+}
+.projectTextContainer p {
+    margin: 0;
+    font-size: 1.5em;
+    padding: 0.6em;
+    padding-right: 1em;
+    color: #fff;
+    vertical-align: middle;
+    display: table-cell;
+    letter-spacing: 0.05em;
+    text-indent: 0;
+    font-family: "BebasNeue", Helvetica, Arial, sans-serif;
+}
+#footer p {
+    margin: 0;
+    font-size: 1em;
+    padding: 2em;
+    padding-top: 0.5em;
+    color: #fff;
+    letter-spacing: 0.05em;
+    font-family: "BebasNeue", Helvetica, Arial, sans-serif;
+    line-height: 150%;
+    text-indent: 0;
+}
+::selection {
+    color: #f1f1f1;
+    background: #555;
+}
+::-moz-selection {
+    color: #f1f1f1;
+    background: #555;
+}
+/*Mobile Support*/
+@media (min-width: 480px) and (max-width: 959px) {
+.socialText {
+    font-size: 0.6em;
+}
+}
+@media only screen and (max-width: 960) {
+.socialText {
+    font-size: 0.1em;
+}
+}
+@media (min-width: 961px) and (max-width: 1280px) {
+.socialText {
+    font-size: 0.8em;
+}
+}
+@media only screen and (max-width: 100vh) {
+.page {
+    width: 100vw;
+    min-height: 48vw;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+}
+.textContainer {
+    height: inherit;
+    width: 100vw;
+    padding-bottom: 10vw;
+    display: inline-table;
+}
+.imageContainer {
+    height: auto;
+    width: 100vw;
+    display: table-cell;
+    text-align: center;
+    padding-top: 10vw;
+    padding-bottom: 10vw;
+}
+.socContainer {
+    position: relative;
+    float: left;
+    width: 100%;
+    height: 60vw;
+}
+.imageCard {
+    box-shadow: 0.5em 1em 3em rgba(0,0,0,0.5);
+    float: left;
+    position: relative;
+    transform: translate(-50%,-0%);
+    left: 50%;
+    top: 50%;
+    transition-duration:  0.3s;
+}
+.socContainer .imageCard {
+    transform: translate(-50%,-50%) !important;
+}
+.projectImage {
+    position: relative;
+    width: 80vw;
+    display: block;
+    transition-duration:  0.3s;
+}
+.projectTextContainer {
+    position: absolute;
+    z-index: 3;
+    background-color: #000;
+    -webkit-clip-path: polygon(0 0, 0 100%, calc(100% - 1em) 100%, 100% 0);
+    bottom: 4vw;
+    left: -2vw;
+    opacity: 1;
+    transition: 0.3s; 
+}
+.projectTextContainer p {
+    margin: 0;
+    font-size: 0.9em;
+    padding: 0.8em;
+    padding-right: 1.5em;
+    color: #fff;
+    vertical-align: middle;
+    display: table-cell;
+    letter-spacing: 0.05em;
+    font-family: "BebasNeue", Helvetica, Arial, sans-serif;
+}
+.webImage {
+    width: 80vw;
+    display: block;
+}
+/*Text Styles*/
+h1 {
+    margin: 0;
+    font-size: 3em;
+    padding: 0.5em;
+    padding-left: 4vw;
+    color: #fff;
+    vertical-align: middle;
+    display: table-cell;
+    letter-spacing: 0.03em;
+    font-family: "BebasNeue", Helvetica, Arial, sans-serif;
+}
+h2 {
+    margin: 0;
+    font-size: 1em;
+    padding: 0.5em;
+    padding-left: 4vw;
+    color: #ccc;
+    vertical-align: middle;
+    display: table-cell;
+    letter-spacing: 0.03em;
+    font-weight: 100;
+    font-family: "Roboto", Helvetica, Arial, sans-serif;
+}
+h3 {
+    margin: 0;
+    font-size: 2em;
+    padding: 0.5em;
+    padding: 0.5em;
+    color: #D27C53;
+    text-align: left;
+    letter-spacing: 0.03em;
+    font-family: "BebasNeue", Helvetica, Arial, sans-serif;
+}
+p {
+    margin: 0;
+    font-size: 1em;
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+    padding-bottom: 1.5em;
+    color: #f1f1f1;
+    letter-spacing: 0.05em;
+    line-height: 150%;
+    word-spacing: 0.05em;
+    text-indent: 1em;
+    font-weight: 100;
+    font-family: "Roboto", Helvetica, Arial, sans-serif;
+}
+a {
+    color: #D27C53;
+    text-decoration-line: underline;
+    transition-duration: 0.3s;
+    margin: 0;
+}
+    
+/*Social Media Card Styles*/
+.socialCard {
+    background-color: #f1f1f1;
+    background-size: 12vw 12vw;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 4vw;
+    width: 42vw;
+    height: 42vw;
+    border-radius: 5vw;
+    transition: 0.3s;
+    box-shadow: 0.5em 1em 3em rgba(0,0,0,0.5);
+    float: left;
+}
+.socialCardAdd {
+    background-size: 0vw 0vw;
+    border-radius: 50%;
+}
+.socialText {
+    vertical-align: middle;
+    display: table-cell;
+    font-size: 0.65em;
+    font-family: "Roboto", Helvetica, Arial, sans-serif;
+    color: #345678;
+    transition: 0.3s;
+    opacity: 0;
+    padding: 1vw;
+}
+#downArrowContainer {
+    bottom: 0;
+    padding: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: -2;
+    text-align: center;
+    visibility: hidden;
+}
+#footerImage {
+    width: 3.5em;
+}
+#footer p {
+    margin: 0;
+    font-size: 0.7em;
+    padding: 2em;
+    padding-top: 0.5em;
+    color: #fff;
+    letter-spacing: 0.05em;
+    font-family: "BebasNeue", Helvetica, Arial, sans-serif;
+    line-height: 150%;
+}
+    
+/*New Stuff*/
+.v-center-div-content {
+    width: 100%;
+    height: 48vw;
+    display: table-cell;
+    vertical-align: middle;
+}
+.page-wrapper {
+    width: 100vw;
+    height: auto;
+    padding-top: 3vw;
+    padding-bottom: 3vw;
+    display: flex;
+    flex-direction: column;
+}
+.left-container, .right-container {
+    width: 100vw;
+    height: auto;
+    padding: 1em;
+    float: left;
+}
+#front-logo {
+    padding-top: 1em;
+    height: 70vw;
+}
+.contains-text {
+    display: grid;
+    display: grid;
+}
+.alt-image-large{
+    position: relative;
+    float: left;
+    width: 100%;
+    height: 100%;
+}
+.image-holder {
+    box-shadow: 0.5em 1em 3em rgba(0,0,0,0.5);
+    float: left;
+    position: relative;
+    transform: translateX(-50%);
+    left: 50%;
+    margin-top: 2em;
+}
+.static-image {
+    position: relative;
+    width: 50vw;
+    display: block;
+}
+}
