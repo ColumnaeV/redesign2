@@ -1,0 +1,242 @@
+/*Font Styles*/
+@font-face {
+    font-family: 'BebasNeue';
+    src: url(../../../core/font/BebasNeue-Regular.otf);
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Roboto';
+    src: url(../../../core/font/Roboto-Thin.tff);
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*Loading Styles*/
+#load {
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100vw;
+    height: 100vh;
+    z-index: 9999;
+    opacity: 1;
+    background-color: #1c1c1c;
+    transition-duration: 0.5s;
+}
+#load img {
+    height:  50vmin;
+    position: absolute;
+    bottom: 50%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+}
+#logo {
+    padding: 4em;
+    width: 40vh;
+    margin: auto;
+    position: relative;
+}
+#footerImage {
+    width: 7em;
+}
+
+/*Scroll Bar Styles*/
+::-webkit-scrollbar {
+    width: 0.8em;
+}
+::-webkit-scrollbar-thumb {
+    background: #777;
+    border: solid 0.2em #1c1c1c;
+    border-radius: 0.8em;
+}
+::-webkit-scrollbar-track {
+    background: #1c1c1c;
+}
+
+/*Container Styles*/
+body {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    min-height: 100vh;
+    background-color: #1c1c1c;
+    overflow-x: hidden;
+}
+div {
+    box-sizing: border-box;
+}
+#bodyContainer{
+    padding: 0;
+    margin: 0;
+    width: 100vw;
+    height: 100%;
+    transition-duration: 1.5s;
+    display: block;
+    opacity: 0;
+    transition-delay: 0.5s;
+    transition-duration: 1.25s;
+}
+#intro {
+    width: 100vw;
+    height: inherit;
+}
+
+/*Split Styles*/
+#projectsBodyContainer {
+    width: 100vw;
+    height: inherit;
+    display: flex;
+    flex-direction: row;
+}
+#dsSplit {
+    width 100%;
+    height: inherit;
+    display: table-cell;
+}
+.imageContainer {
+    position: relative;
+    float: left;
+    width: 50vw;
+    height: 30vw;
+}
+
+/*Image Styles*/
+.imageCard {
+    box-shadow: 0.5em 1em 3em rgba(0,0,0,0.5);
+    float: left;
+    position: relative;
+    transform: translate(-50%,-50%);
+    left: 50%;
+    top: 50%;
+    transition-duration:  0.3s;
+}
+.imageCardAdd {
+    transform: translate(-50%, -48%);
+    box-shadow: 0.5em 0.8em 2em rgba(0,0,0,0.6);
+}
+.projectImage {
+    position: relative;
+    width: 40vw;
+    display: block;
+    transition-duration:  0.3s;
+}
+.projectImageAdd {
+    width: 36vw;
+}
+
+/*Text Styles*/
+#intro p {
+    margin: 0;
+    font-size: 1.5em;
+    padding: 0.6em;
+    color: #fff;
+    letter-spacing: 0.05em;
+    font-family: "BebasNeue", Helvetica, Arial, sans-serif;
+}
+#footer p {
+    margin: 0;
+    font-size: 1em;
+    padding: 2em;
+    padding-top: 0.5em;
+    color: #fff;
+    letter-spacing: 0.05em;
+    font-family: "BebasNeue", Helvetica, Arial, sans-serif;
+    line-height: 150%;
+}
+
+/*Project Text Styles*/
+.projectTextContainer {
+    position: absolute;
+    z-index: -1;
+    background-color: #000;
+    -webkit-clip-path: polygon(0 0, 0 100%, calc(100% - 1em) 100%, 100% 0);
+    bottom: 0.5vw;
+    left: -2vw;
+    opacity: 0;
+    transition: 0.3s; 
+}
+.projectTextContainerAdd {
+    z-index: 5;
+    bottom: 2vw;
+    opacity: 1; 
+}
+.projectTextContainer p {
+    margin: 0;
+    font-size: 1.5em;
+    padding: 0.6em;
+    padding-right: 1em;
+    color: #fff;
+    vertical-align: middle;
+    display: table-cell;
+    letter-spacing: 0.05em;
+    font-family: "BebasNeue", Helvetica, Arial, sans-serif;
+}
+@media only screen and (max-width: 100vh) {
+#footerImage {
+    width: 3.5em;
+}
+.imageContainer {
+    position: relative;
+    float: left;
+    width: 100vw;
+    height: 60vw;
+}
+
+/*Image Styles*/
+.imageCard {
+    box-shadow: 0.5em 1em 3em rgba(0,0,0,0.5);
+    float: left;
+    position: relative;
+    transform: translate(-50%,-50%);
+    left: 50%;
+    top: 50%;
+    transition-duration:  0.3s;
+}
+.projectImage {
+    position: relative;
+    width: 80vw;
+    display: block;
+    transition-duration:  0.3s;
+}
+.projectTextContainer {
+    position: absolute;
+    z-index: 3;
+    background-color: #000;
+    -webkit-clip-path: polygon(0 0, 0 100%, calc(100% - 1em) 100%, 100% 0);
+    bottom: 4vw;
+    left: -2vw;
+    opacity: 1;
+    transition: 0.3s; 
+}
+.projectTextContainer p {
+    margin: 0;
+    font-size: 0.9em;
+    padding: 0.8em;
+    padding-right: 1.5em;
+    color: #fff;
+    vertical-align: middle;
+    display: table-cell;
+    letter-spacing: 0.05em;
+    font-family: "BebasNeue", Helvetica, Arial, sans-serif;
+}
+/*Text Styles*/
+#intro p {
+    margin: 0;
+    font-size: 0.9em;
+    padding: 0.6em;
+    color: #fff;
+    letter-spacing: 0.05em;
+    font-family: "BebasNeue", Helvetica, Arial, sans-serif;
+}
+#footer p {
+    margin: 0;
+    font-size: 0.7em;
+    padding: 2em;
+    padding-top: 0.5em;
+    color: #fff;
+    letter-spacing: 0.05em;
+    font-family: "BebasNeue", Helvetica, Arial, sans-serif;
+    line-height: 150%;
+}
+}
