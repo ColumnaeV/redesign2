@@ -1,0 +1,319 @@
+/*Pen Style Font*/
+@font-face {
+    font-family: 'PenStyle';
+    src: url(penstyle.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Cursive';
+    src: url(penStyleFont.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*General / Container Styles*/
+p,h1,h2,h3,h4,h5 {
+    cursor: default;
+    opacity: 1;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+img {
+    user-drag: none; 
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+#frontImage {
+    width: 60vmin;
+    left: 50%;
+    padding-top: 10vh;
+    padding-bottom: 4vh;
+}
+div {
+    box-sizing: border-box;
+}
+
+/*Loading*/
+#load {
+    position: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-color: #e6e6e6;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    opacity: 1;
+    transition-duration: 0.75s;
+    left: 0;
+    top: 0;
+    z-index: 999;
+}
+#icon {
+    margin: 4vh;
+    height: 14vh;
+}
+
+/*Main Container Styles*/
+body {
+    background: #ddd;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    font-family: "Roboto", Helvetica, Arial, sans-serif;
+}
+#bodyContainer{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    transition-duration: 1.5s;
+    display: inherit;
+    box-shadow: 0 0 1vw #000;
+}
+#person {
+    display: inherit;
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 50vw;
+    background-size: cover;
+    background-position: center top;
+}
+#text {
+    display: inherit;
+    z-index: 10;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 59vw;
+    background-color: #ddd;
+    -webkit-clip-path: polygon(0% 0%, 0% 100vh, 49vw 100vh, 59vw 0vh);
+    box-shadow: 0 0 1vw #000;
+    text-align: center;
+}
+#layerGrey {
+    z-index: 5;
+    position: absolute;
+    top: 0vh;
+    left 0vw;
+    height: 100vh;
+    width: 62vw;
+    background-color: #444;
+    -webkit-clip-path: polygon(0% 0%, 0% 100vh, 52vw 100vh, 62vw 0vh);
+    box-shadow: 0 0 1vw #000;
+}
+#layerGold {
+    z-index: 6;
+    position: absolute;
+    top: 0vh;
+    left 0vw;
+    height: 100vh;
+    width: 61vw;
+    background-color: #FBCE00;
+    -webkit-clip-path: polygon(0% 0%, 0% 100vh, 51vw 100vh, 61vw 0vh);
+    box-shadow: 0 0 1vw #000;
+}
+#layerBlue {
+    z-index: 7;
+    position: absolute;
+    top: 0vh;
+    left 0vw;
+    height: 100vh;
+    width: 60vw;
+    background-color: #234567;
+    -webkit-clip-path: polygon(0% 0%, 0% 100vh, 50vw 100vh, 60vw 0vh);
+    box-shadow: 0 0 1vw #000;
+}
+/*Text Styles*/
+h1 {
+    font-size: 6vmin;
+    font-weight: 900;
+    line-height: 120%;
+    color: #444;
+    margin: 0;
+    padding-bottom: 2vh;
+    font-family: "Cursive";
+    text-align: center;
+}
+/*Section Titles*/
+h2 {
+    padding-top: 3vh;
+    padding-bottom: 1vh;
+    margin: 0;
+    color: #234567;
+    font-size: 6vmin;
+    font-weight: 500;
+    text-align: center;
+    line-height: 100%;
+    word-spacing: 5px;
+    font-family: "Cursive";
+}
+/*Article titles*/
+h3 {
+    padding-left: 3vw;
+    padding-right: 3vw;
+    padding-top: 2vh;
+    margin: 0;
+    color: #444;
+    font-size: 4vmin;
+    font-weight: 600;
+    text-align: center;
+    line-height: 140%;
+    word-spacing: 5px;
+    font-family: "Cursive";
+}
+b {
+    font-family: "PenStyle";
+    font-weight: 600;
+    font-size: 3.5vmin;
+}
+a {
+    text-decoration: none;
+    color: #444;
+    z-index: 20;
+}
+a:hover {
+    cursor: pointer;
+}
+/*Mobile Support*/
+@media only screen and (max-width: 100vh) {
+#bodyContainer{
+    position: absolute;
+    top: 5vh;
+    left: 10vw;
+    width: 80vw;
+    height: 90vh;
+    transition-duration: 1.5s;
+    display: inherit;
+    box-shadow: 0 0 4vw #000;
+}
+#person {
+    display: inherit;
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 50vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center top;
+}
+#text {
+    display: inherit;
+    z-index: 10;
+    position: absolute;
+    top: 45vh;
+    left: 0;
+    height: 45vh;
+    width: 100%;
+    background-color: #ddd;
+    -webkit-clip-path: polygon(0% 5vh, 0% 100%, 100% 100%, 100% 0%);
+    box-shadow: 0 0 4vw #000;
+    text-align: center;
+}
+#layerGrey {
+    display: inherit;
+    z-index: 5;
+    position: absolute;
+    top: 42vh;
+    left 0vw;
+    height: 48vh;
+    width: 100%;
+    background-color: #444;
+    -webkit-clip-path: polygon(0% 5vh, 0% 100%, 100% 100%, 100% 0%);
+    box-shadow: 0 0 4vw #000;
+}
+#layerGold {
+    display: inherit;
+    z-index: 6;
+    position: absolute;
+    top: 43vh;
+    left 0vw;
+    height: 47vh;
+    width: 100%;
+    background-color: #FBCE00;
+    -webkit-clip-path: polygon(0% 5vh, 0% 100%, 100% 100%, 100% 0%);
+    box-shadow: 0 0 4vw #000;
+}
+#layerBlue {
+    display: inherit;
+    z-index: 7;
+    position: absolute;
+    top: 44vh;
+    left 0vw;
+    height: 46vh;
+    width: 100%;
+    background-color: #234567;
+    -webkit-clip-path: polygon(0% 5vh, 0% 100%, 100% 100%, 100% 0%);
+    box-shadow: 0 0 4vw #000;
+}
+#icon {
+    margin: 2.2vh;
+    height: 7vh;
+}
+/*Text Styles*/
+h1 {
+    font-size: 4.5vmin;
+    font-weight: 900;
+    line-height: 120%;
+    color: #444;
+    margin: 0;
+    padding-bottom: 0.5vh;
+    font-family: "Cursive";
+    text-align: center;
+}
+/*Section Titles*/
+h2 {
+    padding-top: 1vh;
+    padding-bottom: 0.5vh;
+    margin: 0;
+    color: #234567;
+    font-size: 4vmin;
+    font-weight: 500;
+    text-align: center;
+    line-height: 100%;
+    word-spacing: 5px;
+    font-family: "Cursive";
+}
+/*Article titles*/
+h3 {
+    padding-left: 3vw;
+    padding-right: 3vw;
+    padding-top: 0.5vh;
+    margin: 0;
+    color: #444;
+    font-size: 3vmin;
+    font-weight: 600;
+    text-align: center;
+    line-height: 120%;
+    word-spacing: 5px;
+    font-family: "Cursive";
+}
+b {
+    font-family: "PenStyle";
+    font-weight: 600;
+    font-size: 2.5vmin;
+}
+a {
+    text-decoration: none;
+    color: #444;
+    z-index: 20;
+}
+}
