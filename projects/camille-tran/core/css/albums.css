@@ -1,0 +1,241 @@
+/*Font Styles*/
+@font-face {
+    font-family: 'Dosis';
+    src: url(../font/Dosis-ExtraLight.otf);
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Goon';
+    src: url(../font/Goon.otf);
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Titillium';
+    src: url(../font/TitilliumWeb-ExtraLight.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*Loading Styles*/
+#load {
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100vw;
+    height: 100%;
+    z-index: 9999;
+    opacity: 1;
+    background-color: #fafafa;
+    transition-duration: 0.5s;
+}
+#load img {
+    height: 40vw;
+    position: absolute;
+    bottom: 50%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+}
+
+/*Container Styles*/
+body {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    min-height: 100%;
+    background-color: #eee;
+    overflow-x: hidden;
+}
+div {
+    box-sizing: border-box;
+}
+#body-container{
+    padding: 0;
+    margin: 0;
+    width: 100vw;
+    height: 100%;
+    transition-duration: 1.5s;
+    display: block;
+    opacity: 0;
+    transition-delay: 0.5s;
+    transition-duration: 1.25s;
+    position: absolute;
+}
+
+/*Scroll Bar Styles*/
+::-webkit-scrollbar {
+    width: 7px;
+}
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+::-webkit-scrollbar-track {
+    background: #fafafa;
+}
+
+/*Selection Style*/
+::selection {
+    color: #f1f1f1;
+    background: #555;
+}
+::-moz-selection {
+    color: #f1f1f1;
+    background: #555;
+}
+/* END OF STANDARD STYLES */
+/*Container Styles New*/
+#particles-js {
+    position: absolute;
+    top: 0;
+    width: 100vw;
+    height: inherit;
+}
+#cover-page {
+    background-image: url(../img/general/wallpaper.jpg);
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+}
+.page {
+    width: 100vw;
+    height: auto;
+    display: flex;
+}
+.ds-split {
+    width: 50vw;
+    min-height: 48vw;
+    padding: 2vw;
+    display: flex;
+    align-items: center;
+}
+.center-ds {
+    justify-content: center;
+}
+.album-ds {
+    width: 50vw;
+    min-height: 48vw;
+    padding: 0;
+    display: flex;
+}
+#special-ds {
+    padding-top: 20vw;
+}
+.split-content{
+    width: auto;
+    height: auto;
+    display: block;
+}
+
+/*Text Styles*/
+h1 {
+    margin: 0;
+    font-size: 8em;
+    padding: 0;
+    padding-left: 4vw;
+    color: #fff;
+    text-shadow: 0 0 1em rgba(0,0,0,0.65);
+    font-family: "Goon", Helvetica, Arial, sans-serif;
+}
+h2 {
+    margin: 0;
+    font-size: 2.6em;
+    padding: 0;
+    padding-left: 4vw;
+    color: #ccc;
+    text-shadow: 0 0 1em rgba(0,0,0,0.65);
+    font-weight: 100;
+    font-family: "Dosis", Helvetica, Arial, sans-serif;
+}
+
+/*Content Text Styles*/
+h3 {
+    margin: 0;
+    padding: 0;
+    padding-bottom: 0.25em;
+    font-size: 2.7em;
+    color: #000;
+    font-family: "Goon", Helvetica, Arial, sans-serif;
+}
+p {
+    margin: 0;
+    font-size: 1.5em;
+    padding: 0;
+    text-indent: 1em;
+    line-height: 1.4em;
+    color: #888;
+    font-weight: 100;
+    font-family: "Dosis", Helvetica, Arial, sans-serif;
+}
+
+/*Nav Styles*/
+.hamburger {
+    position: fixed;
+    top: 1em;
+    right: 1em;
+    z-index: 10;
+}
+.hamburger-wrapper {
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    height: auto;
+    padding: 1em;
+    display: inline-flex;
+    flex-direction: row;
+    background-color: rgba(0,0,0,0);
+    transition-duration: 0.3s;
+    z-index: 5;
+}
+#nav-logo {
+    height: 54px;
+    opacity: 0;
+    transition-duration: 0.3s;
+}
+
+/*Footer Styles*/
+.footer {
+    width: 100%;
+    height: auto;
+    padding: 2vw;
+}
+#footer-logo {
+    width: 10em;
+    padding: 1em;
+}
+.footer-text {
+    text-indent: 0;
+    font-size: 1em;
+}
+
+/*Mobile Support for Fonts*/
+@media (min-width: 480px) and (max-width: 959px) {
+
+}
+@media only screen and (max-width: 960) {
+
+}
+@media (min-width: 961px) and (max-width: 1280px) {
+
+}
+
+/*Mobile Support*/
+@media only screen and (max-width: 100vh) {
+
+
+/*Footer Styles*/
+.footer {
+    width: 100%;
+    height: auto;
+    padding: 4vw;
+}
+#footer-logo {
+    width: 6em;
+    padding: 0.25em;
+}
+.footer-text {
+    text-indent: 0;
+    font-size: 0.7em;
+    line-height: 150%;
+}
+}
